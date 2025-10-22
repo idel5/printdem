@@ -1,0 +1,82 @@
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 16px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  object-position: center center;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.product-details {
+  margin-top: 12px;
+  position: relative;
+}
+
+.customize-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+.customize-icon:hover {
+  opacity: 1;
+}
+
+.color-swatches {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.color-swatch {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 0.4px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.color-swatch:hover {
+  transform: scale(1.1);
+  border-color: #888;
+}
+.color-swatch.selected {
+  border: 0.8px solid #000;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #555;
+}
+.product-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000;
+}
